@@ -3,17 +3,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>¿Qué hacer si una persona es detenida en Monterrey? | Paco González</title>
+  <title>Qué no hacer durante una detención | Paco González</title>
 
   <meta
     name="description"
-    content="Guía jurídica inicial sobre qué hacer si una persona es detenida en Monterrey, Nuevo León. Derechos básicos, pasos inmediatos y orientación legal."
+    content="Conoce errores frecuentes que conviene evitar durante una detención y por qué actuar con calma, orden y orientación jurídica puede ser importante."
   />
   <meta
     name="keywords"
-    content="detención Monterrey, abogado penal Monterrey, qué hacer si detienen a alguien, derechos en una detención, Paco González"
+    content="qué no hacer en una detención, abogado penal Monterrey, errores durante una detención, orientación penal, Paco González"
   />
   <meta name="theme-color" content="#01173b" />
+
+  <link rel="icon" href="imgs/logo-azul.webp" type="image/webp" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -23,7 +25,7 @@
     rel="stylesheet"
   />
   <link
-    href="https://fonts.googleapis.com/css2?family=Georama:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Georama:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Newsreader:ital,wght@0,6..72,200..800;1,6..72,200..800&display=swap"
     rel="stylesheet"
   />
 
@@ -71,13 +73,8 @@
       --degradado-boton: linear-gradient(135deg, #013477 0%, #0555c1 100%);
     }
 
-    * {
-      box-sizing: border-box;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
 
     body {
       margin: 0;
@@ -90,22 +87,8 @@
       overflow-x: hidden;
     }
 
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
-
-    img {
-      display: block;
-      max-width: 100%;
-    }
-
-    button,
-    input,
-    textarea,
-    select {
-      font: inherit;
-    }
+    a { color: inherit; text-decoration: none; }
+    img { display: block; max-width: 100%; }
 
     .contenedor {
       width: min(var(--ancho-contenedor), calc(100% - 2.2rem));
@@ -235,9 +218,7 @@
       transition: transform var(--transicion), box-shadow var(--transicion), background var(--transicion);
     }
 
-    .boton:hover {
-      transform: translateY(-3px);
-    }
+    .boton:hover { transform: translateY(-3px); }
 
     .boton--principal {
       color: var(--color-blanco);
@@ -281,7 +262,7 @@
       color: var(--color-blanco);
       background:
         linear-gradient(rgba(1,23,59,0.78), rgba(1,23,59,0.88)),
-        url("imgs/blog-articulo-1.webp") center / cover no-repeat;
+        url("imgs/blog-articulo-3.webp") center / cover no-repeat;
       overflow: hidden;
     }
 
@@ -359,9 +340,7 @@
       align-items: start;
     }
 
-    .articulo-principal {
-      min-width: 0;
-    }
+    .articulo-principal { min-width: 0; }
 
     .articulo-sidebar {
       position: sticky;
@@ -404,13 +383,8 @@
       color: var(--color-azul-oscuro);
     }
 
-    .articulo-caja h2 {
-      font-size: clamp(1.8rem, 3vw, 2.5rem);
-    }
-
-    .articulo-caja h3 {
-      font-size: 1.45rem;
-    }
+    .articulo-caja h2 { font-size: clamp(1.8rem, 3vw, 2.5rem); }
+    .articulo-caja h3 { font-size: 1.45rem; }
 
     .articulo-caja p {
       margin: 0 0 1rem;
@@ -418,9 +392,7 @@
       font-size: 1rem;
     }
 
-    .articulo-caja p:last-child {
-      margin-bottom: 0;
-    }
+    .articulo-caja p:last-child { margin-bottom: 0; }
 
     .articulo-separador {
       width: 110px;
@@ -428,41 +400,6 @@
       margin: 0 0 1rem;
       background: var(--degradado-linea);
       opacity: 0.8;
-    }
-
-    .articulo-resumen {
-      display: grid;
-      gap: 0.9rem;
-    }
-
-    .articulo-resumen__item {
-      display: grid;
-      grid-template-columns: 54px 1fr;
-      gap: 0.9rem;
-      align-items: start;
-      padding: 1rem;
-      border-radius: 1.2rem;
-      background: rgba(1,52,119,0.05);
-      border: 1px solid rgba(1,52,119,0.08);
-    }
-
-    .articulo-resumen__numero {
-      width: 54px;
-      height: 54px;
-      display: grid;
-      place-items: center;
-      border-radius: 1rem;
-      background: linear-gradient(135deg, var(--color-azul-principal), var(--color-azul-medio));
-      color: var(--color-blanco);
-      font-weight: 800;
-      font-size: 1.05rem;
-      box-shadow: 0 10px 26px rgba(5,85,193,0.18);
-    }
-
-    .articulo-resumen__contenido strong {
-      display: block;
-      color: var(--color-azul-oscuro);
-      margin-bottom: 0.25rem;
     }
 
     .articulo-lista {
@@ -500,6 +437,41 @@
       box-shadow: var(--sombra-xs);
     }
 
+    .articulo-resumen {
+      display: grid;
+      gap: 0.9rem;
+    }
+
+    .articulo-resumen__item {
+      display: grid;
+      grid-template-columns: 54px 1fr;
+      gap: 0.9rem;
+      align-items: start;
+      padding: 1rem;
+      border-radius: 1.2rem;
+      background: rgba(1,52,119,0.05);
+      border: 1px solid rgba(1,52,119,0.08);
+    }
+
+    .articulo-resumen__numero {
+      width: 54px;
+      height: 54px;
+      display: grid;
+      place-items: center;
+      border-radius: 1rem;
+      background: linear-gradient(135deg, var(--color-azul-principal), var(--color-azul-medio));
+      color: var(--color-blanco);
+      font-weight: 800;
+      font-size: 1.05rem;
+      box-shadow: 0 10px 26px rgba(5,85,193,0.18);
+    }
+
+    .articulo-resumen__contenido strong {
+      display: block;
+      color: var(--color-azul-oscuro);
+      margin-bottom: 0.25rem;
+    }
+
     .articulo-cuadricula {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -507,9 +479,7 @@
       margin-top: 1rem;
     }
 
-    .articulo-tarjeta {
-      padding: 1.15rem;
-    }
+    .articulo-tarjeta { padding: 1.15rem; }
 
     .articulo-tarjeta h4 {
       margin: 0 0 0.5rem;
@@ -593,9 +563,7 @@
       color: var(--color-blanco);
     }
 
-    .articulo-dato__titulo {
-      color: var(--color-blanco);
-    }
+    .articulo-dato__titulo { color: var(--color-blanco); }
 
     .articulo-dato__numero {
       font-family: "Newsreader", serif;
@@ -618,9 +586,7 @@
       color: var(--color-blanco);
     }
 
-    .articulo-cta__titulo {
-      color: var(--color-blanco);
-    }
+    .articulo-cta__titulo { color: var(--color-blanco); }
 
     .articulo-cta p {
       color: rgba(255,255,255,0.82);
@@ -708,44 +674,25 @@
       .pie-pagina__rejilla {
         grid-template-columns: 1fr;
       }
-
-      .articulo-sidebar {
-        position: static;
-      }
+      .articulo-sidebar { position: static; }
     }
 
     @media (max-width: 991px) {
-      .encabezado__interior {
-        grid-template-columns: auto 1fr;
-      }
-
-      .navegacion__menu {
-        display: none;
-      }
-
-      .encabezado__acciones {
-        display: none;
-      }
-
-      .articulo-hero {
-        padding-top: 3.6rem;
-      }
+      .encabezado__interior { grid-template-columns: auto 1fr; }
+      .navegacion__menu { display: none; }
+      .encabezado__acciones { display: none; }
+      .articulo-hero { padding-top: 3.6rem; }
     }
 
     @media (max-width: 767px) {
       .contenedor {
         width: min(var(--ancho-contenedor), calc(100% - 1.2rem));
       }
-
-      .articulo-cuadricula {
-        grid-template-columns: 1fr;
-      }
-
+      .articulo-cuadricula { grid-template-columns: 1fr; }
       .barra-superior__interior {
         justify-content: flex-start;
         font-size: 0.84rem;
       }
-
       .pie-pagina__inferior-interior {
         justify-content: center;
         text-align: center;
@@ -759,19 +706,15 @@
       .articulo-cta {
         padding: 1rem;
       }
-
       .articulo-hero__titulo {
         font-size: clamp(2rem, 10vw, 3rem);
       }
-
       .articulo-hero__texto {
         font-size: 0.98rem;
       }
-
       .articulo-resumen__item {
         grid-template-columns: 1fr;
       }
-
       .articulo-resumen__numero {
         width: 46px;
         height: 46px;
@@ -779,26 +722,19 @@
     }
 
     @media (prefers-reduced-motion: reduce) {
-      html {
-        scroll-behavior: auto;
-      }
-
+      html { scroll-behavior: auto; }
       *,
       *::before,
       *::after {
         animation: none !important;
         transition: none !important;
       }
-
       .revelar {
         opacity: 1 !important;
         transform: none !important;
       }
     }
   </style>
-
-   <link rel="icon" href="imgs/logo-azul.webp" type="image/webp" />
-   
 </head>
 <body>
 
@@ -812,12 +748,10 @@
         <span class="barra-superior__punto">●</span>
         <span>Orientación penal clara</span>
       </div>
-
       <div class="barra-superior__elemento">
         <span class="barra-superior__punto">●</span>
         <span>Monterrey, Nuevo León</span>
       </div>
-
       <a class="barra-superior__elemento" href="tel:+528117095540">
         <span class="barra-superior__punto">●</span>
         <span>81 1709 5540</span>
@@ -852,19 +786,19 @@
     <section class="articulo-hero">
       <div class="contenedor">
         <div class="articulo-hero__contenido revelar">
-          <span class="articulo-hero__ceja">Artículo 1 · Detenciones</span>
+          <span class="articulo-hero__ceja">Artículo 3 · Detenciones</span>
           <h1 class="articulo-hero__titulo">
-            ¿Qué hacer si una persona es detenida en Monterrey?
+            Qué no hacer durante una detención
           </h1>
           <p class="articulo-hero__texto">
-            Una detención genera incertidumbre, miedo y muchas dudas. Actuar rápido, con calma y con información correcta
-            puede marcar una diferencia importante desde los primeros minutos.
+            En una detención, los errores impulsivos pueden complicar la situación. Actuar con calma, evitar reacciones
+            precipitadas y buscar orientación adecuada puede ser tan importante como cualquier paso inmediato.
           </p>
 
           <div class="articulo-hero__meta">
-            <span class="articulo-hero__pill">Guía inicial</span>
+            <span class="articulo-hero__pill">Guía preventiva</span>
             <span class="articulo-hero__pill">Lectura aproximada: 6 minutos</span>
-            <span class="articulo-hero__pill">Enfoque orientativo</span>
+            <span class="articulo-hero__pill">Tema: errores frecuentes</span>
           </div>
         </div>
       </div>
@@ -875,175 +809,152 @@
         <div class="articulo-layout__rejilla">
           <article class="articulo-principal">
 
-            <section class="articulo-caja revelar" id="panorama">
+            <section class="articulo-caja revelar" id="introduccion">
               <div class="articulo-separador"></div>
-              <h2>Lo primero: no entrar en pánico</h2>
+              <h2>Cuando la reacción puede empeorar el panorama</h2>
               <p>
-                Cuando una persona es detenida, la reacción inmediata suele ser de angustia. Sin embargo, los primeros pasos
-                deben darse con serenidad. Una respuesta impulsiva puede empeorar la comunicación, retrasar la localización
-                o generar confusión innecesaria.
+                En una situación de detención, la tensión emocional puede llevar a respuestas impulsivas, discusiones,
+                versiones confusas o decisiones mal pensadas. En muchos casos, el problema no solo es lo que ocurre en la
+                detención, sino también la manera en que se reacciona frente a ella.
               </p>
               <p>
-                Lo más importante es entender que, desde el inicio, existen derechos que deben respetarse y decisiones que
-                deben tomarse con criterio. Por eso, la rapidez debe ir acompañada de orden.
+                Por eso, además de saber qué hacer, también conviene tener claro qué conductas es mejor evitar desde el inicio.
               </p>
 
               <div class="articulo-aviso">
-                <strong>Dato importante</strong>
+                <strong>Punto central</strong>
                 <p>
-                  La etapa inicial de una detención suele ser una de las más delicadas, porque ahí comienzan a definirse
-                  muchas actuaciones posteriores.
+                  En materia penal, actuar sin orden o desde el enojo puede generar más obstáculos que soluciones.
                 </p>
               </div>
             </section>
 
-            <section class="articulo-caja revelar revelar--retardo-1" id="pasos-inmediatos">
+            <section class="articulo-caja revelar revelar--retardo-1" id="errores-principales">
               <div class="articulo-separador"></div>
-              <h2>Pasos inmediatos recomendables</h2>
+              <h2>Errores que conviene evitar</h2>
+
+              <ul class="articulo-lista">
+                <li>Discutir impulsivamente con autoridades sin comprender primero el contexto.</li>
+                <li>Dar versiones apresuradas o contradictorias por nervios o desinformación.</li>
+                <li>Difundir rumores entre familiares y conocidos antes de confirmar datos básicos.</li>
+                <li>Suponer que la situación “se resolverá sola” y retrasar la orientación legal.</li>
+                <li>Tomar decisiones importantes desde la angustia, la presión o el enojo.</li>
+              </ul>
+
+              <div class="articulo-cuadricula">
+                <div class="articulo-tarjeta">
+                  <h4>Impulso</h4>
+                  <p>Reaccionar de inmediato sin claridad puede cerrar oportunidades de actuar con más inteligencia.</p>
+                </div>
+                <div class="articulo-tarjeta">
+                  <h4>Confusión</h4>
+                  <p>Entre más versiones diferentes circulen, más difícil se vuelve ordenar el seguimiento de la situación.</p>
+                </div>
+              </div>
+            </section>
+
+            <section class="articulo-caja revelar revelar--retardo-2" id="familia">
+              <div class="articulo-separador"></div>
+              <h2>Lo que la familia tampoco debería hacer</h2>
 
               <div class="articulo-resumen">
                 <div class="articulo-resumen__item">
                   <div class="articulo-resumen__numero">1</div>
                   <div class="articulo-resumen__contenido">
-                    <strong>Confirmar la detención</strong>
-                    <span>Reúne datos básicos: nombre completo, lugar aproximado, hora y autoridad involucrada si es posible.</span>
+                    <strong>No multiplicar versiones</strong>
+                    <span>Lo ideal es centralizar la información y confirmar datos antes de compartirlos con varias personas.</span>
                   </div>
                 </div>
 
                 <div class="articulo-resumen__item">
                   <div class="articulo-resumen__numero">2</div>
                   <div class="articulo-resumen__contenido">
-                    <strong>Evitar versiones confusas</strong>
-                    <span>No difundas información no confirmada. En estas situaciones, la precisión ayuda más que la especulación.</span>
+                    <strong>No actuar solo por presión</strong>
+                    <span>La urgencia no debe empujar a decisiones improvisadas o mal evaluadas.</span>
                   </div>
                 </div>
 
                 <div class="articulo-resumen__item">
                   <div class="articulo-resumen__numero">3</div>
                   <div class="articulo-resumen__contenido">
-                    <strong>Buscar orientación penal inmediata</strong>
-                    <span>La intervención jurídica temprana permite dar seguimiento y revisar qué está ocurriendo realmente.</span>
+                    <strong>No retrasar apoyo jurídico</strong>
+                    <span>Esperar demasiado para pedir orientación puede volver más difícil entender o seguir el caso.</span>
                   </div>
                 </div>
               </div>
             </section>
 
-            <section class="articulo-caja revelar revelar--retardo-2" id="derechos">
+            <section class="articulo-caja revelar" id="por-que-pasa">
               <div class="articulo-separador"></div>
-              <h2>Derechos básicos que deben respetarse</h2>
+              <h2>Por qué estos errores son tan comunes</h2>
               <p>
-                Toda persona detenida debe ser tratada conforme a la ley. Aunque cada asunto tiene sus propias circunstancias,
-                existen bases mínimas que no deben perderse de vista.
+                La mayoría de estas conductas aparecen por miedo, desconocimiento o sensación de urgencia. No se trata de mala fe,
+                sino de una reacción humana frente a una situación inesperada. Sin embargo, precisamente por eso es importante
+                anticiparlas y saber controlarlas.
               </p>
-
-              <ul class="articulo-lista">
-                <li>Conocer la razón de la detención.</li>
-                <li>Ser puesta a disposición conforme al procedimiento correspondiente.</li>
-                <li>Contar con defensa y orientación jurídica.</li>
-                <li>Ser tratada con respeto a su integridad y dignidad.</li>
-                <li>Poder comunicar su situación a familiares o personas de confianza, según el contexto aplicable.</li>
-              </ul>
-
-              <div class="articulo-cuadricula">
-                <div class="articulo-tarjeta">
-                  <h4>Claridad</h4>
-                  <p>No basta con saber que hubo una detención. Es importante entender en qué contexto ocurrió y bajo qué actuación.</p>
-                </div>
-
-                <div class="articulo-tarjeta">
-                  <h4>Seguimiento</h4>
-                  <p>Desde el primer momento conviene documentar los datos que puedan servir para ubicar y comprender la situación.</p>
-                </div>
-              </div>
-            </section>
-
-            <section class="articulo-caja revelar" id="errores">
-              <div class="articulo-separador"></div>
-              <h2>Errores frecuentes que conviene evitar</h2>
               <p>
-                En una situación de tensión es normal actuar desde la emoción. Aun así, hay conductas que pueden dificultar
-                el seguimiento del caso o entorpecer la comunicación.
+                Tener claridad sobre lo que no conviene hacer permite reducir el margen de error y mantener una actuación más ordenada.
               </p>
-
-              <ul class="articulo-lista">
-                <li>Enfrentarse impulsivamente con autoridades sin información suficiente.</li>
-                <li>Compartir versiones no verificadas con varias personas al mismo tiempo.</li>
-                <li>Retrasar la búsqueda de orientación legal especializada.</li>
-                <li>Suponer que “después se arregla” sin atender el momento inicial.</li>
-                <li>Firmar o aceptar información sin comprender el contexto completo.</li>
-              </ul>
 
               <div class="articulo-aviso">
-                <strong>Consejo práctico</strong>
+                <strong>Dato útil</strong>
                 <p>
-                  Organiza por escrito los datos disponibles: nombre, hora, lugar aproximado, testigos, llamadas recibidas
-                  y cualquier referencia útil. Ese orden ayuda mucho.
+                  A veces, lo más inteligente en un momento tenso no es hacer más cosas, sino evitar aquellas que pueden empeorar el panorama.
                 </p>
               </div>
             </section>
 
-            <section class="articulo-caja revelar revelar--retardo-1" id="familia">
+            <section class="articulo-caja revelar revelar--retardo-1" id="que-si-conviene">
               <div class="articulo-separador"></div>
-              <h2>¿Qué puede hacer la familia o una persona cercana?</h2>
+              <h2>Entonces, ¿qué sí conviene?</h2>
               <p>
-                La familia suele convertirse en el primer soporte. Su papel no es resolver el caso por intuición, sino ayudar
-                a reunir información y canalizar la situación con inteligencia.
+                Si bien este artículo se centra en lo que no debe hacerse, también es útil recordar algunas pautas que ayudan
+                a encauzar mejor la situación.
               </p>
 
-              <div class="articulo-cuadricula">
-                <div class="articulo-tarjeta">
-                  <h4>Mantener calma</h4>
-                  <p>La serenidad permite tomar decisiones más útiles que la improvisación.</p>
-                </div>
-
-                <div class="articulo-tarjeta">
-                  <h4>Centralizar información</h4>
-                  <p>Es mejor que una sola persona organice y confirme los datos principales.</p>
-                </div>
-
-                <div class="articulo-tarjeta">
-                  <h4>Actuar pronto</h4>
-                  <p>La rapidez en pedir orientación puede ser relevante en la etapa inicial.</p>
-                </div>
-
-                <div class="articulo-tarjeta">
-                  <h4>Evitar rumores</h4>
-                  <p>No toda versión que circula en ese momento es correcta o útil.</p>
-                </div>
-              </div>
+              <ul class="articulo-lista">
+                <li>Mantener la calma y evitar confrontaciones impulsivas.</li>
+                <li>Reunir datos básicos por escrito y confirmar lo que sea posible.</li>
+                <li>Designar a una persona para centralizar la información.</li>
+                <li>Buscar orientación penal especializada lo antes posible.</li>
+                <li>Evitar decisiones importantes sin comprender el contexto general.</li>
+              </ul>
             </section>
 
             <section class="articulo-caja revelar revelar--retardo-2" id="orientacion">
               <div class="articulo-separador"></div>
-              <h2>Por qué la orientación penal inmediata importa</h2>
+              <h2>La importancia de actuar con estrategia</h2>
               <p>
-                En temas penales, los primeros movimientos suelen tener un peso importante. Una orientación adecuada desde el
-                inicio ayuda a ubicar el panorama, identificar riesgos y entender qué sigue.
+                Una detención no es solo un momento de tensión; también es una situación en la que las primeras reacciones pueden
+                influir en la manera en que se organiza la información y se enfrenta el panorama jurídico.
               </p>
               <p>
-                No se trata únicamente de “esperar noticias”, sino de dar seguimiento con criterio. La experiencia jurídica
-                permite leer mejor el contexto, hacer preguntas correctas y evitar decisiones precipitadas.
+                Por eso, evitar errores básicos y buscar orientación adecuada desde el inicio puede hacer una diferencia importante
+                en términos de orden, comprensión y capacidad de respuesta.
               </p>
 
-              <div class="articulo-aviso">
-                <strong>Idea central</strong>
-                <p>
-                  La atención temprana no garantiza resultados automáticos, pero sí mejora la capacidad de reacción y comprensión del caso.
-                </p>
+              <div class="articulo-cuadricula">
+                <div class="articulo-tarjeta">
+                  <h4>Calma</h4>
+                  <p>La serenidad ayuda a leer mejor lo que pasa y a reducir decisiones precipitadas.</p>
+                </div>
+                <div class="articulo-tarjeta">
+                  <h4>Estrategia</h4>
+                  <p>Un enfoque ordenado siempre es más útil que una reacción impulsiva o desorganizada.</p>
+                </div>
               </div>
             </section>
 
-            <section class="articulo-caja revelar" id="cierre">
+            <section class="articulo-caja revelar" id="conclusion">
               <div class="articulo-separador"></div>
               <h2>Conclusión</h2>
               <p>
-                Si una persona es detenida en Monterrey, lo más importante es actuar con rapidez, serenidad y orden. Confirmar
-                información, evitar errores impulsivos y buscar orientación penal especializada son decisiones que pueden ser
-                muy relevantes desde el primer momento.
+                Durante una detención, evitar errores puede ser tan importante como dar pasos correctos. Discutir sin información,
+                difundir rumores, actuar por presión o retrasar orientación legal son conductas que conviene prevenir.
               </p>
               <p>
-                Cada asunto tiene particularidades propias. Por eso, la mejor forma de abordar una situación de este tipo es
-                con atención directa, análisis del contexto y acompañamiento jurídico adecuado.
+                En escenarios de tensión, la mejor ruta suele ser la más serena: confirmar información, mantener orden y buscar
+                orientación penal adecuada lo antes posible.
               </p>
             </section>
 
@@ -1053,20 +964,20 @@
             <div class="articulo-indice revelar">
               <h3 class="articulo-indice__titulo">Contenido del artículo</h3>
               <ul class="articulo-indice__lista">
-                <li><a href="#panorama">Lo primero: no entrar en pánico</a></li>
-                <li><a href="#pasos-inmediatos">Pasos inmediatos</a></li>
-                <li><a href="#derechos">Derechos básicos</a></li>
-                <li><a href="#errores">Errores frecuentes</a></li>
-                <li><a href="#familia">Qué puede hacer la familia</a></li>
-                <li><a href="#orientacion">Por qué importa la orientación</a></li>
-                <li><a href="#cierre">Conclusión</a></li>
+                <li><a href="#introduccion">Introducción</a></li>
+                <li><a href="#errores-principales">Errores principales</a></li>
+                <li><a href="#familia">Errores de la familia</a></li>
+                <li><a href="#por-que-pasa">Por qué pasa</a></li>
+                <li><a href="#que-si-conviene">Qué sí conviene</a></li>
+                <li><a href="#orientacion">Actuar con estrategia</a></li>
+                <li><a href="#conclusion">Conclusión</a></li>
               </ul>
             </div>
 
             <div class="articulo-dato revelar revelar--retardo-1">
-              <h3 class="articulo-dato__titulo">Lectura rápida</h3>
-              <div class="articulo-dato__numero">5+</div>
-              <p>Puntos clave que toda persona cercana a una detención debería tener presentes.</p>
+              <h3 class="articulo-dato__titulo">Idea rápida</h3>
+              <div class="articulo-dato__numero">5</div>
+              <p>Errores frecuentes que conviene tener presentes para no complicar una situación de detención.</p>
             </div>
 
             <div class="articulo-cta revelar revelar--retardo-2">
@@ -1107,9 +1018,9 @@
 
       <div class="pie-pagina__columna">
         <h3>Artículo</h3>
-        <a href="#panorama">Panorama</a>
-        <a href="#derechos">Derechos</a>
-        <a href="#cierre">Conclusión</a>
+        <a href="#introduccion">Introducción</a>
+        <a href="#errores-principales">Errores</a>
+        <a href="#conclusion">Conclusión</a>
       </div>
 
       <div class="pie-pagina__columna">
@@ -1139,7 +1050,6 @@
 
       function actualizarEncabezado() {
         if (!encabezado) return;
-
         if (window.scrollY > 24) {
           encabezado.classList.add("encabezado--activo");
         } else {
@@ -1154,7 +1064,6 @@
 
       function actualizarBarraLectura() {
         if (!barraLectura) return;
-
         const scrollTop = window.scrollY;
         const alturaDocumento = document.documentElement.scrollHeight - window.innerHeight;
         const progreso = alturaDocumento > 0 ? (scrollTop / alturaDocumento) * 100 : 0;
