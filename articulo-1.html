@@ -1,0 +1,1189 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>¿Qué hacer si una persona es detenida en Monterrey? | Paco González</title>
+
+  <meta
+    name="description"
+    content="Guía jurídica inicial sobre qué hacer si una persona es detenida en Monterrey, Nuevo León. Derechos básicos, pasos inmediatos y orientación legal."
+  />
+  <meta
+    name="keywords"
+    content="detención Monterrey, abogado penal Monterrey, qué hacer si detienen a alguien, derechos en una detención, Paco González"
+  />
+  <meta name="theme-color" content="#01173b" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Georama:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap"
+    rel="stylesheet"
+  />
+
+  <style>
+    :root {
+      --color-azul-principal: #013477;
+      --color-azul-oscuro: #01173b;
+      --color-azul-medio: #0555c1;
+      --color-azul-claro: #9cc0ff;
+      --color-dorado: #d4b16a;
+
+      --color-blanco: #ffffff;
+      --color-texto: rgba(1, 23, 59, 0.92);
+      --color-texto-secundario: rgba(1, 23, 59, 0.72);
+
+      --borde-azul: rgba(1, 52, 119, 0.1);
+      --borde-blanco: rgba(255, 255, 255, 0.14);
+
+      --sombra-xs: 0 6px 16px rgba(1, 23, 59, 0.06);
+      --sombra-sm: 0 12px 28px rgba(1, 23, 59, 0.08);
+      --sombra-md: 0 20px 50px rgba(1, 23, 59, 0.14);
+      --sombra-lg: 0 30px 80px rgba(1, 23, 59, 0.18);
+      --sombra-xl: 0 40px 110px rgba(1, 23, 59, 0.22);
+
+      --radio-sm: 1rem;
+      --radio-md: 1.4rem;
+      --radio-lg: 2rem;
+      --radio-xl: 2.6rem;
+      --radio-xxl: 3rem;
+
+      --transicion: 0.35s ease;
+      --ancho-contenedor: 1240px;
+      --alto-encabezado: 90px;
+      --alto-barra-superior: 46px;
+
+      --degradado-linea: linear-gradient(
+        90deg,
+        transparent 0%,
+        rgba(5, 85, 193, 0.52) 25%,
+        rgba(1, 52, 119, 0.9) 50%,
+        rgba(5, 85, 193, 0.52) 75%,
+        transparent 100%
+      );
+
+      --degradado-boton: linear-gradient(135deg, #013477 0%, #0555c1 100%);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Georama", "Inter", sans-serif;
+      color: var(--color-texto);
+      background:
+        linear-gradient(180deg, rgba(245,247,251,0.82), rgba(237,242,247,0.95)),
+        url("imgs/fondo-papel.webp") center / cover no-repeat;
+      line-height: 1.65;
+      overflow-x: hidden;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+    button,
+    input,
+    textarea,
+    select {
+      font: inherit;
+    }
+
+    .contenedor {
+      width: min(var(--ancho-contenedor), calc(100% - 2.2rem));
+      margin: 0 auto;
+    }
+
+    .barra-superior {
+      position: relative;
+      z-index: 30;
+      min-height: var(--alto-barra-superior);
+      background: rgba(1, 23, 59, 0.96);
+      color: rgba(255, 255, 255, 0.88);
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .barra-superior__interior {
+      min-height: var(--alto-barra-superior);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem 1.6rem;
+      flex-wrap: wrap;
+      padding: 0.35rem 0;
+      font-size: 0.92rem;
+    }
+
+    .barra-superior__elemento {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.55rem;
+    }
+
+    .barra-superior__punto {
+      color: rgba(255,255,255,0.48);
+      font-size: 0.7rem;
+    }
+
+    .encabezado {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      min-height: var(--alto-encabezado);
+      display: flex;
+      align-items: center;
+      background: rgba(255,255,255,0.75);
+      backdrop-filter: blur(18px);
+      border-bottom: 1px solid rgba(1,52,119,0.06);
+      transition: background var(--transicion), box-shadow var(--transicion);
+    }
+
+    .encabezado--activo {
+      background: rgba(255,255,255,0.9);
+      box-shadow: 0 12px 34px rgba(1,23,59,0.08);
+    }
+
+    .encabezado__interior {
+      min-height: var(--alto-encabezado);
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      align-items: center;
+      gap: 1.4rem;
+    }
+
+    .encabezado__marca {
+      display: inline-flex;
+      align-items: center;
+    }
+
+    .encabezado__logo {
+      width: clamp(110px, 10vw, 150px);
+      object-fit: contain;
+    }
+
+    .navegacion {
+      display: flex;
+      justify-content: center;
+    }
+
+    .navegacion__menu {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.45rem;
+      flex-wrap: wrap;
+      padding: 0.35rem;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.54);
+      border: 1px solid rgba(1,52,119,0.05);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.42);
+    }
+
+    .navegacion__enlace {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 50px;
+      padding: 0.75rem 1.15rem;
+      border-radius: 999px;
+      color: rgba(1,23,59,0.84);
+      font-size: 0.95rem;
+      font-weight: 700;
+      transition: transform var(--transicion), color var(--transicion);
+    }
+
+    .navegacion__enlace:hover,
+    .navegacion__enlace--activo {
+      color: var(--color-azul-principal);
+      transform: translateY(-1px);
+    }
+
+    .encabezado__acciones {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+    }
+
+    .boton {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 52px;
+      padding: 0.9rem 1.4rem;
+      border-radius: 999px;
+      font-size: 0.96rem;
+      font-weight: 700;
+      transition: transform var(--transicion), box-shadow var(--transicion), background var(--transicion);
+    }
+
+    .boton:hover {
+      transform: translateY(-3px);
+    }
+
+    .boton--principal {
+      color: var(--color-blanco);
+      background: var(--degradado-boton);
+      box-shadow: 0 14px 34px rgba(5,85,193,0.28);
+    }
+
+    .boton--contorno {
+      color: var(--color-azul-principal);
+      border: 1px solid rgba(1,52,119,0.16);
+      background: rgba(255,255,255,0.86);
+    }
+
+    .boton--cristal {
+      color: var(--color-blanco);
+      border: 1px solid rgba(255,255,255,0.14);
+      background: rgba(255,255,255,0.08);
+      backdrop-filter: blur(12px);
+    }
+
+    .articulo-progreso {
+      position: fixed;
+      inset: 0 auto auto 0;
+      width: 100%;
+      height: 4px;
+      z-index: 120;
+      background: transparent;
+    }
+
+    .articulo-progreso__barra {
+      width: 0;
+      height: 100%;
+      background: linear-gradient(90deg, var(--color-dorado), var(--color-azul-medio));
+      box-shadow: 0 4px 12px rgba(5,85,193,0.25);
+      transition: width 0.1s linear;
+    }
+
+    .articulo-hero {
+      position: relative;
+      padding: 4.5rem 0 4.2rem;
+      color: var(--color-blanco);
+      background:
+        linear-gradient(rgba(1,23,59,0.78), rgba(1,23,59,0.88)),
+        url("imgs/blog-articulo-1.webp") center / cover no-repeat;
+      overflow: hidden;
+    }
+
+    .articulo-hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(circle at top right, rgba(255,255,255,0.08), transparent 30%),
+        radial-gradient(circle at bottom left, rgba(5,85,193,0.16), transparent 35%);
+      pointer-events: none;
+    }
+
+    .articulo-hero__contenido {
+      position: relative;
+      z-index: 2;
+      max-width: 920px;
+    }
+
+    .articulo-hero__ceja {
+      display: inline-flex;
+      align-items: center;
+      min-height: 42px;
+      padding: 0.6rem 1rem;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.14);
+      font-size: 0.9rem;
+      font-weight: 800;
+    }
+
+    .articulo-hero__titulo {
+      margin: 1rem 0 0;
+      font-family: "Newsreader", serif;
+      font-size: clamp(2.4rem, 5vw, 4.9rem);
+      line-height: 0.98;
+      letter-spacing: -0.04em;
+    }
+
+    .articulo-hero__texto {
+      max-width: 760px;
+      margin: 1rem 0 0;
+      font-size: 1.08rem;
+      color: rgba(255,255,255,0.84);
+    }
+
+    .articulo-hero__meta {
+      margin-top: 1.4rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.7rem;
+    }
+
+    .articulo-hero__pill {
+      display: inline-flex;
+      align-items: center;
+      min-height: 40px;
+      padding: 0.55rem 0.9rem;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.12);
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: rgba(255,255,255,0.92);
+    }
+
+    .articulo-layout {
+      padding: 3.2rem 0 5rem;
+    }
+
+    .articulo-layout__rejilla {
+      display: grid;
+      grid-template-columns: minmax(0, 0.78fr) minmax(260px, 0.22fr);
+      gap: 1.5rem;
+      align-items: start;
+    }
+
+    .articulo-principal {
+      min-width: 0;
+    }
+
+    .articulo-sidebar {
+      position: sticky;
+      top: calc(var(--alto-encabezado) + 1.2rem);
+      display: grid;
+      gap: 1rem;
+    }
+
+    .articulo-caja,
+    .articulo-indice,
+    .articulo-dato,
+    .articulo-aviso,
+    .articulo-cta,
+    .articulo-tarjeta {
+      border-radius: var(--radio-xl);
+      background:
+        linear-gradient(rgba(255,255,255,0.86), rgba(255,255,255,0.86)),
+        url("imgs/fondo-papel.webp") center / cover no-repeat;
+      border: 1px solid var(--borde-azul);
+      box-shadow: var(--sombra-sm);
+    }
+
+    .articulo-indice,
+    .articulo-dato,
+    .articulo-cta {
+      padding: 1.2rem;
+    }
+
+    .articulo-caja {
+      padding: 1.6rem 1.5rem;
+      margin-bottom: 1.2rem;
+    }
+
+    .articulo-caja h2,
+    .articulo-caja h3 {
+      margin: 0 0 0.9rem;
+      font-family: "Newsreader", serif;
+      line-height: 1.04;
+      letter-spacing: -0.02em;
+      color: var(--color-azul-oscuro);
+    }
+
+    .articulo-caja h2 {
+      font-size: clamp(1.8rem, 3vw, 2.5rem);
+    }
+
+    .articulo-caja h3 {
+      font-size: 1.45rem;
+    }
+
+    .articulo-caja p {
+      margin: 0 0 1rem;
+      color: var(--color-texto-secundario);
+      font-size: 1rem;
+    }
+
+    .articulo-caja p:last-child {
+      margin-bottom: 0;
+    }
+
+    .articulo-separador {
+      width: 110px;
+      height: 1px;
+      margin: 0 0 1rem;
+      background: var(--degradado-linea);
+      opacity: 0.8;
+    }
+
+    .articulo-resumen {
+      display: grid;
+      gap: 0.9rem;
+    }
+
+    .articulo-resumen__item {
+      display: grid;
+      grid-template-columns: 54px 1fr;
+      gap: 0.9rem;
+      align-items: start;
+      padding: 1rem;
+      border-radius: 1.2rem;
+      background: rgba(1,52,119,0.05);
+      border: 1px solid rgba(1,52,119,0.08);
+    }
+
+    .articulo-resumen__numero {
+      width: 54px;
+      height: 54px;
+      display: grid;
+      place-items: center;
+      border-radius: 1rem;
+      background: linear-gradient(135deg, var(--color-azul-principal), var(--color-azul-medio));
+      color: var(--color-blanco);
+      font-weight: 800;
+      font-size: 1.05rem;
+      box-shadow: 0 10px 26px rgba(5,85,193,0.18);
+    }
+
+    .articulo-resumen__contenido strong {
+      display: block;
+      color: var(--color-azul-oscuro);
+      margin-bottom: 0.25rem;
+    }
+
+    .articulo-lista {
+      display: grid;
+      gap: 0.8rem;
+      margin: 1rem 0 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .articulo-lista li {
+      position: relative;
+      padding: 0.95rem 1rem 0.95rem 3rem;
+      border-radius: 1rem;
+      background: rgba(1,52,119,0.05);
+      border: 1px solid rgba(1,52,119,0.08);
+      color: var(--color-texto-secundario);
+    }
+
+    .articulo-lista li::before {
+      content: "•";
+      position: absolute;
+      left: 1.2rem;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 26px;
+      height: 26px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--color-dorado), #e1c38a);
+      color: var(--color-azul-oscuro);
+      font-weight: 900;
+      font-size: 1rem;
+      box-shadow: var(--sombra-xs);
+    }
+
+    .articulo-cuadricula {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .articulo-tarjeta {
+      padding: 1.15rem;
+    }
+
+    .articulo-tarjeta h4 {
+      margin: 0 0 0.5rem;
+      font-family: "Newsreader", serif;
+      font-size: 1.2rem;
+      color: var(--color-azul-oscuro);
+    }
+
+    .articulo-tarjeta p {
+      margin: 0;
+      color: var(--color-texto-secundario);
+      font-size: 0.96rem;
+    }
+
+    .articulo-aviso {
+      position: relative;
+      padding: 1.2rem 1.2rem 1.2rem 1.3rem;
+      margin-top: 1rem;
+      overflow: hidden;
+    }
+
+    .articulo-aviso::before {
+      content: "";
+      position: absolute;
+      inset: 0 auto 0 0;
+      width: 6px;
+      background: linear-gradient(180deg, var(--color-dorado), var(--color-azul-principal));
+    }
+
+    .articulo-aviso strong {
+      display: block;
+      margin-bottom: 0.35rem;
+      color: var(--color-azul-oscuro);
+    }
+
+    .articulo-aviso p {
+      margin: 0;
+      color: var(--color-texto-secundario);
+    }
+
+    .articulo-indice__titulo,
+    .articulo-dato__titulo,
+    .articulo-cta__titulo {
+      margin: 0 0 0.8rem;
+      font-family: "Newsreader", serif;
+      font-size: 1.35rem;
+      color: var(--color-azul-oscuro);
+    }
+
+    .articulo-indice__lista {
+      display: grid;
+      gap: 0.6rem;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+
+    .articulo-indice__lista a {
+      display: block;
+      padding: 0.75rem 0.9rem;
+      border-radius: 0.95rem;
+      background: rgba(1,52,119,0.05);
+      border: 1px solid rgba(1,52,119,0.08);
+      color: var(--color-texto-secundario);
+      font-weight: 700;
+      transition: transform var(--transicion), color var(--transicion), background var(--transicion);
+    }
+
+    .articulo-indice__lista a:hover {
+      transform: translateX(4px);
+      color: var(--color-azul-principal);
+      background: rgba(1,52,119,0.08);
+    }
+
+    .articulo-dato {
+      background:
+        linear-gradient(rgba(1,23,59,0.92), rgba(1,23,59,0.92)),
+        url("imgs/fondo-cuero.webp") center / cover no-repeat;
+      border: 1px solid var(--borde-blanco);
+      box-shadow: var(--sombra-md);
+      color: var(--color-blanco);
+    }
+
+    .articulo-dato__titulo {
+      color: var(--color-blanco);
+    }
+
+    .articulo-dato__numero {
+      font-family: "Newsreader", serif;
+      font-size: clamp(2.2rem, 5vw, 3rem);
+      line-height: 1;
+      color: var(--color-dorado);
+    }
+
+    .articulo-dato p {
+      margin: 0.6rem 0 0;
+      color: rgba(255,255,255,0.8);
+    }
+
+    .articulo-cta {
+      background:
+        linear-gradient(rgba(255,255,255,0.12), rgba(255,255,255,0.08)),
+        url("imgs/fondo-cuero.webp") center / cover no-repeat;
+      border: 1px solid rgba(255,255,255,0.12);
+      box-shadow: var(--sombra-lg);
+      color: var(--color-blanco);
+    }
+
+    .articulo-cta__titulo {
+      color: var(--color-blanco);
+    }
+
+    .articulo-cta p {
+      color: rgba(255,255,255,0.82);
+      margin: 0 0 1rem;
+    }
+
+    .articulo-cta__acciones {
+      display: grid;
+      gap: 0.7rem;
+    }
+
+    .pie-pagina {
+      position: relative;
+      color: var(--color-blanco);
+      background:
+        linear-gradient(rgba(1,23,59,0.92), rgba(1,23,59,0.96)),
+        url("imgs/fondo-cuero.webp") center / cover no-repeat;
+      overflow: hidden;
+    }
+
+    .pie-pagina__rejilla {
+      display: grid;
+      grid-template-columns: 1.2fr repeat(3, minmax(0, 1fr));
+      gap: 1.4rem;
+      padding: 4rem 0 2.4rem;
+    }
+
+    .pie-pagina__logo {
+      width: 150px;
+      margin-bottom: 1rem;
+    }
+
+    .pie-pagina__marca p,
+    .pie-pagina__columna a,
+    .pie-pagina__columna p {
+      color: rgba(255,255,255,0.76);
+    }
+
+    .pie-pagina__columna {
+      display: grid;
+      align-content: start;
+      gap: 0.6rem;
+    }
+
+    .pie-pagina__columna h3 {
+      margin: 0;
+      font-family: "Newsreader", serif;
+    }
+
+    .pie-pagina__inferior {
+      border-top: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .pie-pagina__inferior-interior {
+      min-height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .pie-pagina__inferior p,
+    .pie-pagina__inferior a {
+      color: rgba(255,255,255,0.72);
+    }
+
+    .revelar {
+      opacity: 0;
+      transform: translateY(34px);
+      transition: opacity 0.8s ease, transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    .revelar.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .revelar--retardo-1 { transition-delay: 0.08s; }
+    .revelar--retardo-2 { transition-delay: 0.16s; }
+    .revelar--retardo-3 { transition-delay: 0.24s; }
+
+    @media (max-width: 1199px) {
+      .articulo-layout__rejilla,
+      .pie-pagina__rejilla {
+        grid-template-columns: 1fr;
+      }
+
+      .articulo-sidebar {
+        position: static;
+      }
+    }
+
+    @media (max-width: 991px) {
+      .encabezado__interior {
+        grid-template-columns: auto 1fr;
+      }
+
+      .navegacion__menu {
+        display: none;
+      }
+
+      .encabezado__acciones {
+        display: none;
+      }
+
+      .articulo-hero {
+        padding-top: 3.6rem;
+      }
+    }
+
+    @media (max-width: 767px) {
+      .contenedor {
+        width: min(var(--ancho-contenedor), calc(100% - 1.2rem));
+      }
+
+      .articulo-cuadricula {
+        grid-template-columns: 1fr;
+      }
+
+      .barra-superior__interior {
+        justify-content: flex-start;
+        font-size: 0.84rem;
+      }
+
+      .pie-pagina__inferior-interior {
+        justify-content: center;
+        text-align: center;
+      }
+    }
+
+    @media (max-width: 575px) {
+      .articulo-caja,
+      .articulo-indice,
+      .articulo-dato,
+      .articulo-cta {
+        padding: 1rem;
+      }
+
+      .articulo-hero__titulo {
+        font-size: clamp(2rem, 10vw, 3rem);
+      }
+
+      .articulo-hero__texto {
+        font-size: 0.98rem;
+      }
+
+      .articulo-resumen__item {
+        grid-template-columns: 1fr;
+      }
+
+      .articulo-resumen__numero {
+        width: 46px;
+        height: 46px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      *,
+      *::before,
+      *::after {
+        animation: none !important;
+        transition: none !important;
+      }
+
+      .revelar {
+        opacity: 1 !important;
+        transform: none !important;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="articulo-progreso" aria-hidden="true">
+    <div class="articulo-progreso__barra" id="barraLectura"></div>
+  </div>
+
+  <div class="barra-superior">
+    <div class="contenedor barra-superior__interior">
+      <div class="barra-superior__elemento">
+        <span class="barra-superior__punto">●</span>
+        <span>Orientación penal clara</span>
+      </div>
+
+      <div class="barra-superior__elemento">
+        <span class="barra-superior__punto">●</span>
+        <span>Monterrey, Nuevo León</span>
+      </div>
+
+      <a class="barra-superior__elemento" href="tel:+528117095540">
+        <span class="barra-superior__punto">●</span>
+        <span>81 1709 5540</span>
+      </a>
+    </div>
+  </div>
+
+  <header class="encabezado" id="inicio">
+    <div class="contenedor encabezado__interior">
+      <a href="index.html" class="encabezado__marca" aria-label="Ir al inicio">
+        <img src="imgs/logo-azul.webp" alt="Logo de Paco González" class="encabezado__logo" />
+      </a>
+
+      <nav class="navegacion" aria-label="Navegación principal">
+        <div class="navegacion__menu">
+          <a href="index.html" class="navegacion__enlace">Inicio</a>
+          <a href="blog.html" class="navegacion__enlace navegacion__enlace--activo">Blog</a>
+          <a href="index.html#contacto" class="navegacion__enlace">Contacto</a>
+        </div>
+      </nav>
+
+      <div class="encabezado__acciones">
+        <a href="blog.html" class="boton boton--contorno">Volver al blog</a>
+        <a href="https://wa.me/528117095540" target="_blank" rel="noopener noreferrer" class="boton boton--principal">
+          Defensa urgente
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="articulo-hero">
+      <div class="contenedor">
+        <div class="articulo-hero__contenido revelar">
+          <span class="articulo-hero__ceja">Artículo 1 · Detenciones</span>
+          <h1 class="articulo-hero__titulo">
+            ¿Qué hacer si una persona es detenida en Monterrey?
+          </h1>
+          <p class="articulo-hero__texto">
+            Una detención genera incertidumbre, miedo y muchas dudas. Actuar rápido, con calma y con información correcta
+            puede marcar una diferencia importante desde los primeros minutos.
+          </p>
+
+          <div class="articulo-hero__meta">
+            <span class="articulo-hero__pill">Guía inicial</span>
+            <span class="articulo-hero__pill">Lectura aproximada: 6 minutos</span>
+            <span class="articulo-hero__pill">Enfoque orientativo</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="articulo-layout">
+      <div class="contenedor">
+        <div class="articulo-layout__rejilla">
+          <article class="articulo-principal">
+
+            <section class="articulo-caja revelar" id="panorama">
+              <div class="articulo-separador"></div>
+              <h2>Lo primero: no entrar en pánico</h2>
+              <p>
+                Cuando una persona es detenida, la reacción inmediata suele ser de angustia. Sin embargo, los primeros pasos
+                deben darse con serenidad. Una respuesta impulsiva puede empeorar la comunicación, retrasar la localización
+                o generar confusión innecesaria.
+              </p>
+              <p>
+                Lo más importante es entender que, desde el inicio, existen derechos que deben respetarse y decisiones que
+                deben tomarse con criterio. Por eso, la rapidez debe ir acompañada de orden.
+              </p>
+
+              <div class="articulo-aviso">
+                <strong>Dato importante</strong>
+                <p>
+                  La etapa inicial de una detención suele ser una de las más delicadas, porque ahí comienzan a definirse
+                  muchas actuaciones posteriores.
+                </p>
+              </div>
+            </section>
+
+            <section class="articulo-caja revelar revelar--retardo-1" id="pasos-inmediatos">
+              <div class="articulo-separador"></div>
+              <h2>Pasos inmediatos recomendables</h2>
+
+              <div class="articulo-resumen">
+                <div class="articulo-resumen__item">
+                  <div class="articulo-resumen__numero">1</div>
+                  <div class="articulo-resumen__contenido">
+                    <strong>Confirmar la detención</strong>
+                    <span>Reúne datos básicos: nombre completo, lugar aproximado, hora y autoridad involucrada si es posible.</span>
+                  </div>
+                </div>
+
+                <div class="articulo-resumen__item">
+                  <div class="articulo-resumen__numero">2</div>
+                  <div class="articulo-resumen__contenido">
+                    <strong>Evitar versiones confusas</strong>
+                    <span>No difundas información no confirmada. En estas situaciones, la precisión ayuda más que la especulación.</span>
+                  </div>
+                </div>
+
+                <div class="articulo-resumen__item">
+                  <div class="articulo-resumen__numero">3</div>
+                  <div class="articulo-resumen__contenido">
+                    <strong>Buscar orientación penal inmediata</strong>
+                    <span>La intervención jurídica temprana permite dar seguimiento y revisar qué está ocurriendo realmente.</span>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="articulo-caja revelar revelar--retardo-2" id="derechos">
+              <div class="articulo-separador"></div>
+              <h2>Derechos básicos que deben respetarse</h2>
+              <p>
+                Toda persona detenida debe ser tratada conforme a la ley. Aunque cada asunto tiene sus propias circunstancias,
+                existen bases mínimas que no deben perderse de vista.
+              </p>
+
+              <ul class="articulo-lista">
+                <li>Conocer la razón de la detención.</li>
+                <li>Ser puesta a disposición conforme al procedimiento correspondiente.</li>
+                <li>Contar con defensa y orientación jurídica.</li>
+                <li>Ser tratada con respeto a su integridad y dignidad.</li>
+                <li>Poder comunicar su situación a familiares o personas de confianza, según el contexto aplicable.</li>
+              </ul>
+
+              <div class="articulo-cuadricula">
+                <div class="articulo-tarjeta">
+                  <h4>Claridad</h4>
+                  <p>No basta con saber que hubo una detención. Es importante entender en qué contexto ocurrió y bajo qué actuación.</p>
+                </div>
+
+                <div class="articulo-tarjeta">
+                  <h4>Seguimiento</h4>
+                  <p>Desde el primer momento conviene documentar los datos que puedan servir para ubicar y comprender la situación.</p>
+                </div>
+              </div>
+            </section>
+
+            <section class="articulo-caja revelar" id="errores">
+              <div class="articulo-separador"></div>
+              <h2>Errores frecuentes que conviene evitar</h2>
+              <p>
+                En una situación de tensión es normal actuar desde la emoción. Aun así, hay conductas que pueden dificultar
+                el seguimiento del caso o entorpecer la comunicación.
+              </p>
+
+              <ul class="articulo-lista">
+                <li>Enfrentarse impulsivamente con autoridades sin información suficiente.</li>
+                <li>Compartir versiones no verificadas con varias personas al mismo tiempo.</li>
+                <li>Retrasar la búsqueda de orientación legal especializada.</li>
+                <li>Suponer que “después se arregla” sin atender el momento inicial.</li>
+                <li>Firmar o aceptar información sin comprender el contexto completo.</li>
+              </ul>
+
+              <div class="articulo-aviso">
+                <strong>Consejo práctico</strong>
+                <p>
+                  Organiza por escrito los datos disponibles: nombre, hora, lugar aproximado, testigos, llamadas recibidas
+                  y cualquier referencia útil. Ese orden ayuda mucho.
+                </p>
+              </div>
+            </section>
+
+            <section class="articulo-caja revelar revelar--retardo-1" id="familia">
+              <div class="articulo-separador"></div>
+              <h2>¿Qué puede hacer la familia o una persona cercana?</h2>
+              <p>
+                La familia suele convertirse en el primer soporte. Su papel no es resolver el caso por intuición, sino ayudar
+                a reunir información y canalizar la situación con inteligencia.
+              </p>
+
+              <div class="articulo-cuadricula">
+                <div class="articulo-tarjeta">
+                  <h4>Mantener calma</h4>
+                  <p>La serenidad permite tomar decisiones más útiles que la improvisación.</p>
+                </div>
+
+                <div class="articulo-tarjeta">
+                  <h4>Centralizar información</h4>
+                  <p>Es mejor que una sola persona organice y confirme los datos principales.</p>
+                </div>
+
+                <div class="articulo-tarjeta">
+                  <h4>Actuar pronto</h4>
+                  <p>La rapidez en pedir orientación puede ser relevante en la etapa inicial.</p>
+                </div>
+
+                <div class="articulo-tarjeta">
+                  <h4>Evitar rumores</h4>
+                  <p>No toda versión que circula en ese momento es correcta o útil.</p>
+                </div>
+              </div>
+            </section>
+
+            <section class="articulo-caja revelar revelar--retardo-2" id="orientacion">
+              <div class="articulo-separador"></div>
+              <h2>Por qué la orientación penal inmediata importa</h2>
+              <p>
+                En temas penales, los primeros movimientos suelen tener un peso importante. Una orientación adecuada desde el
+                inicio ayuda a ubicar el panorama, identificar riesgos y entender qué sigue.
+              </p>
+              <p>
+                No se trata únicamente de “esperar noticias”, sino de dar seguimiento con criterio. La experiencia jurídica
+                permite leer mejor el contexto, hacer preguntas correctas y evitar decisiones precipitadas.
+              </p>
+
+              <div class="articulo-aviso">
+                <strong>Idea central</strong>
+                <p>
+                  La atención temprana no garantiza resultados automáticos, pero sí mejora la capacidad de reacción y comprensión del caso.
+                </p>
+              </div>
+            </section>
+
+            <section class="articulo-caja revelar" id="cierre">
+              <div class="articulo-separador"></div>
+              <h2>Conclusión</h2>
+              <p>
+                Si una persona es detenida en Monterrey, lo más importante es actuar con rapidez, serenidad y orden. Confirmar
+                información, evitar errores impulsivos y buscar orientación penal especializada son decisiones que pueden ser
+                muy relevantes desde el primer momento.
+              </p>
+              <p>
+                Cada asunto tiene particularidades propias. Por eso, la mejor forma de abordar una situación de este tipo es
+                con atención directa, análisis del contexto y acompañamiento jurídico adecuado.
+              </p>
+            </section>
+
+          </article>
+
+          <aside class="articulo-sidebar">
+            <div class="articulo-indice revelar">
+              <h3 class="articulo-indice__titulo">Contenido del artículo</h3>
+              <ul class="articulo-indice__lista">
+                <li><a href="#panorama">Lo primero: no entrar en pánico</a></li>
+                <li><a href="#pasos-inmediatos">Pasos inmediatos</a></li>
+                <li><a href="#derechos">Derechos básicos</a></li>
+                <li><a href="#errores">Errores frecuentes</a></li>
+                <li><a href="#familia">Qué puede hacer la familia</a></li>
+                <li><a href="#orientacion">Por qué importa la orientación</a></li>
+                <li><a href="#cierre">Conclusión</a></li>
+              </ul>
+            </div>
+
+            <div class="articulo-dato revelar revelar--retardo-1">
+              <h3 class="articulo-dato__titulo">Lectura rápida</h3>
+              <div class="articulo-dato__numero">5+</div>
+              <p>Puntos clave que toda persona cercana a una detención debería tener presentes.</p>
+            </div>
+
+            <div class="articulo-cta revelar revelar--retardo-2">
+              <h3 class="articulo-cta__titulo">¿Necesitas orientación directa?</h3>
+              <p>
+                Si la situación requiere atención inmediata, puedes comunicarte directamente para recibir orientación jurídica.
+              </p>
+              <div class="articulo-cta__acciones">
+                <a href="tel:+528117095540" class="boton boton--principal">Llamar ahora</a>
+                <a href="https://wa.me/528117095540" target="_blank" rel="noopener noreferrer" class="boton boton--cristal">
+                  WhatsApp directo
+                </a>
+                <a href="blog.html" class="boton boton--contorno">Volver al blog</a>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie-pagina">
+    <div class="contenedor pie-pagina__rejilla">
+      <div class="pie-pagina__marca">
+        <img src="imgs/logo-blanco.webp" alt="Logo de Paco González en blanco" class="pie-pagina__logo" />
+        <p>
+          Paco González, abogado penal litigante en Monterrey, con experiencia dentro del sistema de procuración
+          de justicia y práctica enfocada en defensa penal estratégica.
+        </p>
+      </div>
+
+      <div class="pie-pagina__columna">
+        <h3>Contenido</h3>
+        <a href="index.html">Inicio</a>
+        <a href="blog.html">Blog</a>
+        <a href="index.html#contacto">Contacto</a>
+      </div>
+
+      <div class="pie-pagina__columna">
+        <h3>Artículo</h3>
+        <a href="#panorama">Panorama</a>
+        <a href="#derechos">Derechos</a>
+        <a href="#cierre">Conclusión</a>
+      </div>
+
+      <div class="pie-pagina__columna">
+        <h3>Contacto</h3>
+        <a href="tel:+528117095540">81 1709 5540</a>
+        <a href="mailto:francisco_gonzalez_garcia@hotmail.com">francisco_gonzalez_garcia@hotmail.com</a>
+        <p>Monterrey, Nuevo León</p>
+      </div>
+    </div>
+
+    <div class="pie-pagina__inferior">
+      <div class="contenedor pie-pagina__inferior-interior">
+        <p>© <span id="anioActual">2026</span> Paco González. Todos los derechos reservados.</p>
+        <a href="aviso-de-privacidad.html">Aviso de privacidad</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const anioActual = document.getElementById("anioActual");
+      if (anioActual) {
+        anioActual.textContent = new Date().getFullYear();
+      }
+
+      const encabezado = document.querySelector(".encabezado");
+
+      function actualizarEncabezado() {
+        if (!encabezado) return;
+
+        if (window.scrollY > 24) {
+          encabezado.classList.add("encabezado--activo");
+        } else {
+          encabezado.classList.remove("encabezado--activo");
+        }
+      }
+
+      actualizarEncabezado();
+      window.addEventListener("scroll", actualizarEncabezado, { passive: true });
+
+      const barraLectura = document.getElementById("barraLectura");
+
+      function actualizarBarraLectura() {
+        if (!barraLectura) return;
+
+        const scrollTop = window.scrollY;
+        const alturaDocumento = document.documentElement.scrollHeight - window.innerHeight;
+        const progreso = alturaDocumento > 0 ? (scrollTop / alturaDocumento) * 100 : 0;
+        barraLectura.style.width = `${Math.min(progreso, 100)}%`;
+      }
+
+      actualizarBarraLectura();
+      window.addEventListener("scroll", actualizarBarraLectura, { passive: true });
+
+      const elementosRevelar = document.querySelectorAll(".revelar");
+
+      if ("IntersectionObserver" in window) {
+        const observador = new IntersectionObserver(
+          (entradas) => {
+            entradas.forEach((entrada) => {
+              if (entrada.isIntersecting) {
+                entrada.target.classList.add("visible");
+                observador.unobserve(entrada.target);
+              }
+            });
+          },
+          {
+            threshold: 0.14,
+            rootMargin: "0px 0px -40px 0px"
+          }
+        );
+
+        elementosRevelar.forEach((elemento) => observador.observe(elemento));
+      } else {
+        elementosRevelar.forEach((elemento) => elemento.classList.add("visible"));
+      }
+    });
+  </script>
+</body>
+</html>
