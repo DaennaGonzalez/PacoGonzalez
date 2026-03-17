@@ -14,6 +14,7 @@
     content="detención Monterrey, abogado penal Monterrey, qué hacer si detienen a alguien, derechos en una detención, Paco González"
   />
   <meta name="theme-color" content="#01173b" />
+  <meta name="author" content="Paco González" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -23,9 +24,11 @@
     rel="stylesheet"
   />
   <link
-    href="https://fonts.googleapis.com/css2?family=Georama:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Georama:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet"
   />
+
+  <link rel="icon" href="imgs/logo-azul.webp" type="image/webp" />
 
   <style>
     :root {
@@ -46,13 +49,11 @@
       --sombra-sm: 0 12px 28px rgba(1, 23, 59, 0.08);
       --sombra-md: 0 20px 50px rgba(1, 23, 59, 0.14);
       --sombra-lg: 0 30px 80px rgba(1, 23, 59, 0.18);
-      --sombra-xl: 0 40px 110px rgba(1, 23, 59, 0.22);
 
       --radio-sm: 1rem;
       --radio-md: 1.4rem;
       --radio-lg: 2rem;
       --radio-xl: 2.6rem;
-      --radio-xxl: 3rem;
 
       --transicion: 0.35s ease;
       --ancho-contenedor: 1240px;
@@ -98,13 +99,6 @@
     img {
       display: block;
       max-width: 100%;
-    }
-
-    button,
-    input,
-    textarea,
-    select {
-      font: inherit;
     }
 
     .contenedor {
@@ -198,7 +192,6 @@
     }
 
     .navegacion__enlace {
-      position: relative;
       display: inline-flex;
       align-items: center;
       justify-content: center;
@@ -301,6 +294,19 @@
       max-width: 920px;
     }
 
+    .articulo-breadcrumb {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 1rem;
+      font-size: 0.9rem;
+      color: rgba(255,255,255,0.76);
+    }
+
+    .articulo-breadcrumb span {
+      opacity: 0.8;
+    }
+
     .articulo-hero__ceja {
       display: inline-flex;
       align-items: center;
@@ -359,10 +365,6 @@
       align-items: start;
     }
 
-    .articulo-principal {
-      min-width: 0;
-    }
-
     .articulo-sidebar {
       position: sticky;
       top: calc(var(--alto-encabezado) + 1.2rem);
@@ -375,7 +377,9 @@
     .articulo-dato,
     .articulo-aviso,
     .articulo-cta,
-    .articulo-tarjeta {
+    .articulo-tarjeta,
+    .articulo-faq,
+    .articulo-relacionados {
       border-radius: var(--radio-xl);
       background:
         linear-gradient(rgba(255,255,255,0.86), rgba(255,255,255,0.86)),
@@ -390,13 +394,17 @@
       padding: 1.2rem;
     }
 
-    .articulo-caja {
+    .articulo-caja,
+    .articulo-faq,
+    .articulo-relacionados {
       padding: 1.6rem 1.5rem;
       margin-bottom: 1.2rem;
     }
 
     .articulo-caja h2,
-    .articulo-caja h3 {
+    .articulo-caja h3,
+    .articulo-faq h2,
+    .articulo-relacionados h2 {
       margin: 0 0 0.9rem;
       font-family: "Newsreader", serif;
       line-height: 1.04;
@@ -404,21 +412,23 @@
       color: var(--color-azul-oscuro);
     }
 
-    .articulo-caja h2 {
+    .articulo-caja h2,
+    .articulo-faq h2,
+    .articulo-relacionados h2 {
       font-size: clamp(1.8rem, 3vw, 2.5rem);
     }
 
-    .articulo-caja h3 {
-      font-size: 1.45rem;
-    }
-
-    .articulo-caja p {
+    .articulo-caja p,
+    .articulo-faq p,
+    .articulo-relacionados p {
       margin: 0 0 1rem;
       color: var(--color-texto-secundario);
       font-size: 1rem;
     }
 
-    .articulo-caja p:last-child {
+    .articulo-caja p:last-child,
+    .articulo-faq p:last-child,
+    .articulo-relacionados p:last-child {
       margin-bottom: 0;
     }
 
@@ -632,6 +642,44 @@
       gap: 0.7rem;
     }
 
+    .articulo-faq__item + .articulo-faq__item {
+      margin-top: 1rem;
+      padding-top: 1rem;
+      border-top: 1px solid rgba(1,52,119,0.08);
+    }
+
+    .articulo-faq__item h3 {
+      margin: 0 0 0.4rem;
+      font-family: "Newsreader", serif;
+      color: var(--color-azul-oscuro);
+      font-size: 1.3rem;
+    }
+
+    .articulo-relacionados__grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .articulo-relacionado {
+      padding: 1rem;
+      border-radius: 1.2rem;
+      background: rgba(1,52,119,0.05);
+      border: 1px solid rgba(1,52,119,0.08);
+    }
+
+    .articulo-relacionado strong {
+      display: block;
+      margin-bottom: 0.45rem;
+      color: var(--color-azul-oscuro);
+    }
+
+    .articulo-relacionado span {
+      color: var(--color-texto-secundario);
+      font-size: 0.95rem;
+    }
+
     .pie-pagina {
       position: relative;
       color: var(--color-blanco);
@@ -705,7 +753,8 @@
 
     @media (max-width: 1199px) {
       .articulo-layout__rejilla,
-      .pie-pagina__rejilla {
+      .pie-pagina__rejilla,
+      .articulo-relacionados__grid {
         grid-template-columns: 1fr;
       }
 
@@ -717,10 +766,6 @@
     @media (max-width: 991px) {
       .encabezado__interior {
         grid-template-columns: auto 1fr;
-      }
-
-      .navegacion__menu {
-        display: none;
       }
 
       .encabezado__acciones {
@@ -750,13 +795,25 @@
         justify-content: center;
         text-align: center;
       }
+
+      .navegacion__menu {
+        gap: 0.25rem;
+      }
+
+      .navegacion__enlace {
+        min-height: 42px;
+        padding: 0.65rem 0.85rem;
+        font-size: 0.88rem;
+      }
     }
 
     @media (max-width: 575px) {
       .articulo-caja,
       .articulo-indice,
       .articulo-dato,
-      .articulo-cta {
+      .articulo-cta,
+      .articulo-faq,
+      .articulo-relacionados {
         padding: 1rem;
       }
 
@@ -777,28 +834,7 @@
         height: 46px;
       }
     }
-
-    @media (prefers-reduced-motion: reduce) {
-      html {
-        scroll-behavior: auto;
-      }
-
-      *,
-      *::before,
-      *::after {
-        animation: none !important;
-        transition: none !important;
-      }
-
-      .revelar {
-        opacity: 1 !important;
-        transform: none !important;
-      }
-    }
   </style>
-
-   <link rel="icon" href="imgs/logo-azul.webp" type="image/webp" />
-   
 </head>
 <body>
 
@@ -852,10 +888,21 @@
     <section class="articulo-hero">
       <div class="contenedor">
         <div class="articulo-hero__contenido revelar">
+
+          <nav class="articulo-breadcrumb" aria-label="Ruta de navegación">
+            <a href="index.html">Inicio</a>
+            <span>/</span>
+            <a href="blog.html">Blog</a>
+            <span>/</span>
+            <span>Detenciones</span>
+          </nav>
+
           <span class="articulo-hero__ceja">Artículo 1 · Detenciones</span>
+
           <h1 class="articulo-hero__titulo">
             ¿Qué hacer si una persona es detenida en Monterrey?
           </h1>
+
           <p class="articulo-hero__texto">
             Una detención genera incertidumbre, miedo y muchas dudas. Actuar rápido, con calma y con información correcta
             puede marcar una diferencia importante desde los primeros minutos.
@@ -864,7 +911,8 @@
           <div class="articulo-hero__meta">
             <span class="articulo-hero__pill">Guía inicial</span>
             <span class="articulo-hero__pill">Lectura aproximada: 6 minutos</span>
-            <span class="articulo-hero__pill">Enfoque orientativo</span>
+            <span class="articulo-hero__pill">Monterrey, Nuevo León</span>
+            <span class="articulo-hero__pill">Actualizado 2026</span>
           </div>
         </div>
       </div>
@@ -957,6 +1005,30 @@
               </div>
             </section>
 
+            <section class="articulo-caja revelar" id="fundamento-legal">
+              <div class="articulo-separador"></div>
+              <h2>Fundamento legal relacionado</h2>
+              <p>
+                En este tipo de situaciones, la base jurídica suele vincularse con derechos constitucionales, debido proceso
+                y reglas del procedimiento penal. Cuando integremos citas formales, este bloque servirá para incorporar de forma
+                ordenada los artículos y referencias legales aplicables.
+              </p>
+
+              <ul class="articulo-lista">
+                <li>Derecho a conocer el motivo de la detención.</li>
+                <li>Derecho a defensa adecuada desde etapas tempranas.</li>
+                <li>Respeto a integridad, dignidad y legalidad del procedimiento.</li>
+              </ul>
+
+              <div class="articulo-aviso">
+                <strong>Nota editorial</strong>
+                <p>
+                  Este espacio está preparado para insertar citas legales reales de Constitución, Código Nacional de Procedimientos Penales
+                  y criterios aplicables en Nuevo León.
+                </p>
+              </div>
+            </section>
+
             <section class="articulo-caja revelar" id="errores">
               <div class="articulo-separador"></div>
               <h2>Errores frecuentes que conviene evitar</h2>
@@ -1021,7 +1093,7 @@
                 inicio ayuda a ubicar el panorama, identificar riesgos y entender qué sigue.
               </p>
               <p>
-                No se trata únicamente de “esperar noticias”, sino de dar seguimiento con criterio. La experiencia jurídica
+                No se trata únicamente de esperar noticias, sino de dar seguimiento con criterio. La experiencia jurídica
                 permite leer mejor el contexto, hacer preguntas correctas y evitar decisiones precipitadas.
               </p>
 
@@ -1030,6 +1102,26 @@
                 <p>
                   La atención temprana no garantiza resultados automáticos, pero sí mejora la capacidad de reacción y comprensión del caso.
                 </p>
+              </div>
+            </section>
+
+            <section class="articulo-faq revelar" id="preguntas-frecuentes">
+              <div class="articulo-separador"></div>
+              <h2>Preguntas frecuentes</h2>
+
+              <div class="articulo-faq__item">
+                <h3>¿Qué es lo primero que conviene hacer?</h3>
+                <p>Reunir datos verificables, evitar especulaciones y buscar orientación penal inmediata.</p>
+              </div>
+
+              <div class="articulo-faq__item">
+                <h3>¿La familia puede ayudar?</h3>
+                <p>Sí. Organizar información, centralizar comunicación y actuar con calma puede ser muy útil.</p>
+              </div>
+
+              <div class="articulo-faq__item">
+                <h3>¿Conviene esperar antes de buscar apoyo legal?</h3>
+                <p>Normalmente no. En asuntos penales, los primeros momentos suelen ser especialmente relevantes.</p>
               </div>
             </section>
 
@@ -1045,6 +1137,38 @@
                 Cada asunto tiene particularidades propias. Por eso, la mejor forma de abordar una situación de este tipo es
                 con atención directa, análisis del contexto y acompañamiento jurídico adecuado.
               </p>
+
+              <div class="articulo-aviso">
+                <strong>Aviso importante</strong>
+                <p>
+                  Este contenido tiene fines informativos generales y no sustituye asesoría legal personalizada.
+                </p>
+              </div>
+            </section>
+
+            <section class="articulo-relacionados revelar" id="articulos-relacionados">
+              <div class="articulo-separador"></div>
+              <h2>También te puede interesar</h2>
+              <p>
+                Si este tema se relaciona con tu situación, estos artículos pueden ayudarte a entender mejor el contexto.
+              </p>
+
+              <div class="articulo-relacionados__grid">
+                <a href="articulo-2.html" class="articulo-relacionado">
+                  <strong>Derechos al momento de una detención</strong>
+                  <span>Conoce qué debe respetarse desde el primer contacto con la autoridad.</span>
+                </a>
+
+                <a href="articulo-3.html" class="articulo-relacionado">
+                  <strong>Qué no hacer durante una detención</strong>
+                  <span>Errores frecuentes que pueden complicar la situación jurídica.</span>
+                </a>
+
+                <a href="articulo-15.html" class="articulo-relacionado">
+                  <strong>¿Qué es una detención en flagrancia?</strong>
+                  <span>Contexto general e implicaciones jurídicas inmediatas.</span>
+                </a>
+              </div>
             </section>
 
           </article>
@@ -1056,9 +1180,11 @@
                 <li><a href="#panorama">Lo primero: no entrar en pánico</a></li>
                 <li><a href="#pasos-inmediatos">Pasos inmediatos</a></li>
                 <li><a href="#derechos">Derechos básicos</a></li>
+                <li><a href="#fundamento-legal">Fundamento legal</a></li>
                 <li><a href="#errores">Errores frecuentes</a></li>
                 <li><a href="#familia">Qué puede hacer la familia</a></li>
                 <li><a href="#orientacion">Por qué importa la orientación</a></li>
+                <li><a href="#preguntas-frecuentes">Preguntas frecuentes</a></li>
                 <li><a href="#cierre">Conclusión</a></li>
               </ul>
             </div>
@@ -1109,7 +1235,7 @@
         <h3>Artículo</h3>
         <a href="#panorama">Panorama</a>
         <a href="#derechos">Derechos</a>
-        <a href="#cierre">Conclusión</a>
+        <a href="#preguntas-frecuentes">Preguntas frecuentes</a>
       </div>
 
       <div class="pie-pagina__columna">
@@ -1139,12 +1265,7 @@
 
       function actualizarEncabezado() {
         if (!encabezado) return;
-
-        if (window.scrollY > 24) {
-          encabezado.classList.add("encabezado--activo");
-        } else {
-          encabezado.classList.remove("encabezado--activo");
-        }
+        encabezado.classList.toggle("encabezado--activo", window.scrollY > 24);
       }
 
       actualizarEncabezado();
@@ -1154,7 +1275,6 @@
 
       function actualizarBarraLectura() {
         if (!barraLectura) return;
-
         const scrollTop = window.scrollY;
         const alturaDocumento = document.documentElement.scrollHeight - window.innerHeight;
         const progreso = alturaDocumento > 0 ? (scrollTop / alturaDocumento) * 100 : 0;
